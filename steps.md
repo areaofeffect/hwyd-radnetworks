@@ -22,8 +22,8 @@ Connect app to the MQTT Server
 1. Add MQTT support to the app
 
 
-		kandizzy:meteor-mqtt-fork
-		meteorhacks:npm
+		meteor add kandizzy:meteor-mqtt-fork
+		meteor add meteorhacks:npm
 2. Update the packages.json with the MQTT npm package and restart meteor
 3. Initialize the connection to the MQTT server
 4. Configure environment variables before running Meteor
