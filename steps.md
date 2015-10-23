@@ -7,7 +7,7 @@ Add some routes
 	meteor add iron:router
 	meteor add twbs:bootstrap
 	
-#STEP3
+#STEP 3
 Add home page content
 
 1. Add colpick CSS/JS to the public folder
@@ -16,7 +16,7 @@ Add home page content
 
 3. Intialize the colpick when the home template is rendered
 
-#STEP4
+#STEP 4
 Connect app to the MQTT Server
 
 1. Add MQTT support to the app
@@ -30,6 +30,11 @@ Connect app to the MQTT Server
 
 		source config/env.sh
 		meteor
+		
+#STEP 5
+Send colors from Meteor to MQTT
+
+
 
 
 	
