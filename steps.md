@@ -16,4 +16,5 @@ Add home page content
 
 3. Intialize the colpick when the home template is rendered
 
+(you may also need to run `meteor add ejson`)
 	
