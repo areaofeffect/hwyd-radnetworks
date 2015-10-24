@@ -42,10 +42,28 @@ Connect to the `howwasyourday` network with the password provided
 	  sudo iptables -A INPUT -p tcp -m tcp --dport 1883 -j ACCEPT
 
 ###Use MQTT in a python script
-	  pip install paho-mqtt
+	sudo apt-get install python-pip
+	sudo pip install paho-mqtt
 
 * [Documenation](https://pypi.python.org/pypi/paho-mqtt)
 
 ##Test the LED strips
+1. Install the drivers (The neopixel LED driver software is preinstalled on the colorberries.)
 
+		sudo apt-get update
+		sudo apt-get install build-essential python-dev git scons swig
+		git clone https://github.com/jgarff/rpi_ws281x.git
+		cd rpi_ws281x
+		scons
+		cd python
+		sudo python setup.py install
+
+		
+2. Connect the LED strip to the custom hardware
+3. Run the strand test
+
+		cd examples
+		sudo python strandtest.py
+	
 ##Control the LED strips from the app
+We will write python script using paho-mqtt installed earlier and the neopixel library. 
